@@ -29,13 +29,13 @@ author = 'djj'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark','sphinxcontrib.spelling',"sphinx_comments"
+extensions = ['recommonmark','sphinxcontrib.spelling',"sphinx_comments","googleanalytics"
 ]
+#html_sidebars = {
+# '**': ['addtoc.html', 'relations,html', 'searchbox.html']
+# }
 comments_config = {
-   "utterances": {
-      "repo": "github-org/github-repo",
-      "optional": "config",
-   }
+   "hypothesis": True
 }
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -51,7 +51,23 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'bizstyle'
+html_theme_options = {
+    'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+    'analytics_anonymize_ip': False,
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': False,
+    'titles_only': False
+}
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
