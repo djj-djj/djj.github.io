@@ -9,8 +9,6 @@ Welcome to 理光投影机 RICOH PJ X3340's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
-   demo/操作注意事项.rst
 
    demo/放置投影仪.md
    demo/HDMI输入.md
